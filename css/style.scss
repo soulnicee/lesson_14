@@ -1,0 +1,227 @@
+//Добавлять в конце импорта шмрифтов
+//&display=swap&subset=cyrillic-ext
+
+//Переменные
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+@import "_null";
+
+//Шрифты
+@import "_fonts";
+
+//=======================================
+
+body {
+	line-height: 1;
+	background-color: #f5f5f5;
+	//Шрифт по умолчанию
+	font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+._ibg {
+	position: relative;
+	img {
+		object-fit: cover;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+//=======================================
+
+/* Ограничивающий контейнер */
+[class*="__container"] {
+	max-width: 1050px;
+	margin: 0px auto;
+	padding: 0 15px;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.promise {
+	padding: 50px 0px 112px 0px;
+	// .promise__container
+	&__container {
+	}
+	// .promise__header
+	&__header {
+		margin: 0px 0px 68px 0px;
+	}
+	// .promise__about
+	&__about {
+	}
+}
+.titles {
+	& *:not(:last-child) {
+		margin: 0px 0px 33px 0px;
+	}
+	// .titles__label
+	&__label {
+		background: url(../img/logo1.svg) 0px -4px no-repeat;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 1.7;
+		letter-spacing: 2.5px;
+		text-transform: uppercase;
+		color: #5d62b5;
+		padding: 0px 0px 0px 35px;
+		// .titles__label_white
+		&_white {
+			background: url(/img/logo.svg) 0 -4px no-repeat;
+			color: #ffffff;
+		}
+	}
+	// .titles__title
+	&__title {
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 1.17;
+		color: #000000;
+		// .titles__title_white
+		&_white {
+			color: #ffffff;
+		}
+	}
+}
+.promise__cards {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 24px;
+	margin: 0 -12px;
+}
+.promise__card {
+	flex: 1 1 33.333%;
+	padding: 0 12px;
+}
+.card-promise {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 23px;
+	// .promise-card__image
+	&__image {
+	}
+	// .promise-card__icon
+	&__icon {
+		flex: 0 0 63px;
+	}
+	// .promise-card__body
+	&__body {
+	}
+	// .promise-card__title
+	&__title {
+		font-weight: 900;
+		font-size: 19px;
+		line-height: 1.37;
+		color: #f2726f;
+		&:not(:last-child) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	// .promise-card__text
+	&__text {
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.15px;
+		color: #4b4b4b;
+	}
+}
+
+.impact {
+	background-color: #29c3be;
+	padding: 0px 0px 212px 0px;
+	// .impact__container
+	&__container {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 50%;
+			transform: translate(88%, 0px);
+			width: 68%;
+			height: 100%;
+			background: url(../img/impblob.png) 0 0 / 100% no-repeat;
+		}
+	}
+	// .impact__body
+	&__body {
+		display: flex;
+		margin: 0px -15px;
+		position: relative;
+		&:not(:last-child) {
+			margin-bottom: 79px;
+		}
+	}
+	// .impact__content
+	&__content {
+		flex: 1 1 50%;
+		align-self: flex-end;
+		padding: 20px 15px 0px 15px;
+	}
+	// .impact__header
+	&__header {
+		max-width: 420px;
+	}
+	// .impact__image
+	&__image {
+		margin: -7.61% 0px 0px 0px;
+		flex: 0 1 50%;
+		& img {
+			max-width: 100%;
+			border-radius: 40px;
+		}
+	}
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		margin: 0px -12px;
+		row-gap: 24px;
+	}
+	// .impact__card
+	&__card {
+		padding: 0px 12px;
+		flex: 0 1 25%;
+	}
+}
+.card-impact {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 11px;
+	// .card-impact__image
+	&__image {
+		flex: 0 0 76px;
+	}
+	// .card-impact__body
+	&__body {
+		align-self: center;
+	}
+	// .card-impact__value
+	&__value {
+		color: #ffffff;
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 1.17;
+		&:not(:last-child) {
+			margin: 0px 0px 3px 0px;
+		}
+	}
+	// .card-impact__text
+	&__text {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.15px;
+		color: #5d62b5;
+	}
+}
