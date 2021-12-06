@@ -116,7 +116,7 @@ body {
 }
 
 .titles__label_white {
-  background: url(/img/logo.svg) 0 -4px no-repeat;
+  background: url(../img/logo.svg) 0 -4px no-repeat;
   color: #ffffff;
 }
 
